@@ -52,7 +52,6 @@ public class BST {
             node.right = insert(value, node.right);
         }
         // duplicate values → ignored
-
         node.height = Math.max(height(node.left), height(node.right)) + 1;
         return node;
     }
@@ -68,7 +67,7 @@ public class BST {
 
         int m = s + (e - s) / 2;
         insert(arr[m]);
-        populateSorted(arr, 0, m);
+        populateSorted(arr, 0, m-1);
         populateSorted(arr, m + 1, e);
     }
 

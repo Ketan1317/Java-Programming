@@ -72,7 +72,7 @@ public class MergeAndQuick{
         int i = s;
         int j = e;
         while (i < correct && j > correct) {
-            while (list.get(i) <= pivot) {
+            while (list.get(i) <= pivot) { 
                 i++;
             }
             while (list.get(j) >= pivot) {
